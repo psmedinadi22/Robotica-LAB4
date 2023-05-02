@@ -223,9 +223,9 @@ roslaunch dynamixel_one_motor one_controller.launch
 
 ---
 # Conclusiones
-- El uso de frameworks como ROS permite facilitar en gran medida el uso de robots pequeños como el Pincher utilizado en este laboratorio.
-- En casos en los cuales no se tenga un buen agarre superficial ni el torque suficiente en las articulaciones, una menor velocidad de trabajo mejora la estabilidad del robot.
-- El trabajo en equipo permite adquirir un mayor aprendizaje en el desarrollo de los ejercicios, ya que se genera discusión acerca de lo que se está realizando y cuál es la mejor manera de hacerlo.
+- El uso de frameworks como ROS facilita significativamente la implementación de robots pequeños, como el Pincher utilizado en este laboratorio.
+- Cuando el agarre superficial o el torque de las articulaciones no son suficientes, disminuir la velocidad de trabajo puede mejorar la estabilidad del robot.
+- Trabajar en equipo facilita el aprendizaje en el desarrollo de los ejercicios, dado que se fomenta la discusión sobre lo que se está realizando y cómo hacerlo de la mejor manera posible.
 
 
 ---
