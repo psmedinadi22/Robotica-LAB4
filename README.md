@@ -49,7 +49,7 @@ Se desarrolla un corto Script en MATLAB para crear una imagen virtual de las pos
  ylim([-16.8 34.7])
  zlim([-41.0 73.7])
 ```
-<p align="center"><img height=200 src="./Imágenes/m1.png" alt="Access to I/O system" /></p>
+<p align="center"><img height=300 src="./Imágenes/m1.png" alt="Access to I/O system" /></p>
 
 ---
 # Script en Python
@@ -58,7 +58,16 @@ Se desarrolla un corto Script en MATLAB para crear una imagen virtual de las pos
 ---
 # Resultados
 
-
+1. 0, 0, 0, 0, 0.
+<p align="center"><img height=300 src="./Imágenes/Home.jpeg" alt="Access to I/O system" /></p>
+2. -25, 15, -20, 20, 0.
+<p align="center"><img height=300 src="./Imágenes/1.jpeg" alt="Access to I/O system" /></p>
+3. 35,-35, 30, -30, 0.
+<p align="center"><img height=300 src="./Imágenes/2.jpeg" alt="Access to I/O system" /></p>
+4. -85, 20, -55, 17, 0.
+<p align="center"><img height=300 src="./Imágenes/3.jpeg" alt="Access to I/O system" /></p>
+5. -80, 35, -55, 45, 0
+<p align="center"><img height=300 src="./Imágenes/4.jpeg" alt="Access to I/O system" /></p>
 ---
 # Conclusiones
 
