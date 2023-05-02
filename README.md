@@ -64,10 +64,8 @@ from std_msgs.msg import String
 from sensor_msgs.msg import JointState
 from dynamixel_workbench_msgs.srv import DynamixelCommand
 
-__author__ = "Andres Holguin"
 #Arreglo de torques
 Torques=[500,400,400,400,400]
-
 
 #Ángulos deseados, el home y los 4 casos a evaluar
 Deghome=[0,0,0,0,0]
@@ -76,14 +74,12 @@ Deg2=[30,-30, 30, -30, 0]
 Deg3=[-90, 15, -55, 17, 0]
 Deg4=[ -90, 45, -55, 45, 10]
 
-
-#FUnción print para mostrar en consola los ángulos de los casos.
+#Función print para mostrar en consola los ángulos de los casos.
 def printLB(pos):
     print('Posicion eslabones:\n')
     for i in range (len(pos)):
         print(str(i+1)+': '+"%.2f" % pos[i]+'°\t', end = ' ')
     print('\n')
-
 
 #Imprimir los 4 casos posibles.
 print('Ingrese caso a realizar:\n\n')
@@ -135,8 +131,6 @@ def callback(data):
     PosActual=np.multiply(data.position,180/pi)
     PosActual[2]=PosActual[2]-90
 
-
-
 #Imprime la posición real de los ángulos de los motores.
 def printL(real,teorico):
     print('\nÁngulos motores:\n')
@@ -158,8 +152,6 @@ def movPartido(j,Goal,Actual):
     for i in range(N):
         jointCommand('', (j+1), 'Goal_Position', int(Actual+delta*(i+1)), 0.5)
         time.sleep(0.1)
-
-
 
 #Main
 if __name__ == '__main__':
@@ -213,6 +205,9 @@ roslaunch dynamixel_one_motor one_controller.launch
 
 ---
 # Resultados
+
+
+<p align="center"><img height=300 src="./Imágenes/video.gif" alt="Access to I/O system" /></p>
 
 1. 0, 0, 0, 0, 0.
 <p align="center"><img height=300 src="./Imágenes/Home.jpeg" alt="Access to I/O system" /></p>
