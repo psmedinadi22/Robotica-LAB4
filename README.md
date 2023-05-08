@@ -259,6 +259,12 @@ roslaunch dynamixel_one_motor one_controller.launch
 
 Se obtuvo de manera satisfactoria las posiciones del robot planteadas en la guia de laboratorio, el resultado de esto se puede ver a continuación
 
+
+
+<p align="center">https://user-images.githubusercontent.com/64180738/236725902-82306f39-5500-4393-924b-db04b28098a7.mp4</p>
+
+
+
 <p align="center"><img height=300 src="./Imágenes/videorobotica.gif" alt="Access to I/O system" /></p>
 
 1. 0, 0, 0, 0, 0.
