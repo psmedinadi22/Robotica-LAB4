@@ -21,6 +21,25 @@ Con lo que se puede plantear la siguiente tabla de parámetros DHstd:
 | Theta 3 |	0 |	L3 |	0° |	0° |
 | Theta 4 |	0 |	0 |	90° |	90° |
 | Theta 5	| L4 |	0 |	0° |	0° |
+
+---
+# Modo contralador
+
+```
+roslaunch robotics-ros-2-phantomx-forward_kinematics px_controllers.launch
+```
+
+Este comando iniciará varios nodos:
+
+- El nodo `dynamixel_workbench_controllers` permite la comunicación entre ROS y el robot.
+- El nodo `px_keyop` inicia un bonito cli para que pueda seleccionar una articulación para mover o cambiar entre cinco posiciones predefinidas.
+- El nodo `joint_states_translator` solo recibe todas las posiciones de las articulaciones en radianes del nodo keyop y las asigna a las unidades de nivel de bits para el paquete dynamixel.
+- El nodo `rviz` para **visualización en tiempo real** de la configuración de su robot.
+
+> Demostración
+
+![controller mode package demonstration](./Imágenes/controller_mode.gif)
+
 ---
 # Script en Matlab
 
@@ -49,20 +68,17 @@ Se desarrolla un corto Script en MATLAB para crear una imagen virtual de las pos
  ylim([-16.8 34.7])
  zlim([-41.0 73.7])
 ```
-<p align="center"><img height=300 src="./Imágenes/m1.png" alt="Access to I/O system" /></p>
+
+1. 0, 0, 0, 0, 0.
+<p align="center"><img height=300 src="./Imágenes/pxm1.png" alt="Access to I/O system" /></p>
+
+3. 35,-35, 30, -30, 0.
+<p align="center"><img height=300 src="./Imágenes/pxm2.png" alt="Access to I/O system" /></p>
+
+4. -85, 20, -55, 17, 0.
+<p align="center"><img height=300 src="./Imágenes/pxm3.png" alt="Access to I/O system" /></p>
 
 
-q = [0, 0, 0, 0]
-
-<img src="assets/pxm1.png" margin='auto' width="500">
-
-q = [15, 60, 30, 10]
-
-<img src="assets/pxm2.png" margin='auto' width="500">
-
-q = [30, -15, 60, 60]
-
-<img src="assets/pxm3.png" margin='auto' width="500">
 
 ---
 # Script en Python
@@ -221,7 +237,7 @@ roslaunch dynamixel_one_motor one_controller.launch
 
 Se obtuvo de manera satisfactoria las posiciones del robot planteadas en la guia de laboratorio, el resultado de esto se puede ver a continuación
 
-<p align="center"><img height=300 src="./Imágenes/video.gif" alt="Access to I/O system" /></p>
+<p align="center"><img height=300 src="./Imágenes/videorobotica.gif" alt="Access to I/O system" /></p>
 
 1. 0, 0, 0, 0, 0.
 <p align="center"><img height=300 src="./Imágenes/Home.jpeg" alt="Access to I/O system" /></p>
