@@ -51,6 +51,19 @@ Se desarrolla un corto Script en MATLAB para crear una imagen virtual de las pos
 ```
 <p align="center"><img height=300 src="./Imágenes/m1.png" alt="Access to I/O system" /></p>
 
+
+q = [0, 0, 0, 0]
+
+<img src="assets/pxm1.png" margin='auto' width="500">
+
+q = [15, 60, 30, 10]
+
+<img src="assets/pxm2.png" margin='auto' width="500">
+
+q = [30, -15, 60, 60]
+
+<img src="assets/pxm3.png" margin='auto' width="500">
+
 ---
 # Script en Python
 
