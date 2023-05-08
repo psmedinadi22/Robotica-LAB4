@@ -22,6 +22,28 @@ Con lo que se puede plantear la siguiente tabla de parámetros DHstd:
 | Theta 4 |	0 |	0 |	90° |	90° |
 | Theta 5	| L4 |	0 |	0° |	0° |
 
+
+```
+
+DHPX =
+
+R2 (4 axis, RRRR, stdDH, fastRNE)
+
++---+-----------+-----------+-----------+-----------+-----------+
+| j |     theta |         d |         a |     alpha |    offset |
++---+-----------+-----------+-----------+-----------+-----------+
+|  1|         q1|         14|          0|      1.571|          0|
+|  2|         q2|          0|       10.5|          0|      1.571|
+|  3|         q3|          0|       10.5|          0|          0|
+|  4|         q4|          0|          0|          0|          0|
++---+-----------+-----------+-----------+-----------+-----------+
+
+grav =    0  base = 1  0  0  0   tool =   0           0           1         8.5
+          0         0  1  0  0           -1           0           0           0
+       9.81         0  0  1  0            0          -1           0           0
+                    0  0  0  1            0           0           0           1
+
+```
 ---
 # Modo contralador
 
@@ -38,7 +60,7 @@ Este comando iniciará varios nodos:
 
 > Demostración
 
-![controller mode package demonstration](./Imágenes/controller_mode.gif)
+![controller mode package demonstration](./Imágenes/simulation_mode.gif)
 
 ---
 # Script en Matlab
