@@ -92,7 +92,7 @@ Se desarrolla un corto Script en MATLAB para crear una imagen virtual de las pos
 ```
 
 1. 0, 0, 0, 0, 0.
-<p align="center"><img height=300 src="./Imágenes/pxm1.png" alt="Access to I/O system" /></p>
+<p align="center"><img height=300 src="./Imágenes/m1.png" alt="Access to I/O system" /></p>
 
 3. 35,-35, 30, -30, 0.
 <p align="center"><img height=300 src="./Imágenes/pxm2.png" alt="Access to I/O system" /></p>
